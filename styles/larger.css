@@ -1,0 +1,20 @@
+@media(width > 895px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card {
+        grid-row: 2/3;   
+    }
+    .frontend{
+        grid-row: 1/2;
+    }
+    .infomation{
+        grid-column: 3/4;
+    }
+    .learning-activities{
+        grid-column: 1/3;
+    }
+} 
+    
