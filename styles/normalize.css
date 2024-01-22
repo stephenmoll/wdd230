@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+html, body, h1, h2, h3, p, ul, li, a, img, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Share', cursive;
+    width: 100%;
+    line-height: 1.6;
+}
+
+header, nav, main, footer {
+    display: block;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: brown;
+}
+
+.card {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    padding: 1em;
+    outline: 2px lightgray solid;
+    border-radius: 3px;
+}
+
+.card h3 {
+    color: white;
+    background-color: navy;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.footer {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: navy;
+    text-align: center;
+}
+
+.footer-paragraph-1 {
+    color: white;
+}
+
+#lastModified {
+    color: yellow;
+}
+

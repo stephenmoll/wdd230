@@ -1,40 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
 body {
     font-family: 'Share', cursive;
+    font-size: 14px;
     width: 100%;
 }
 
 .top-bit {
     display: flex; 
     background-color:navy;
-    height: 30%;
+    flex-direction: column; 
+    height: auto; 
 }
 
 .top-bit p {
     margin: 0 auto;
-    font-size: 6vw;
     color: white;
-    margin-top: 10vh;
+    font-size: 4vw; 
+    margin-top: 2vh;
 }
 
 .profile-img {
     margin: 0 auto;
     margin-top: 1vh;
     margin-bottom: 1vh;
-    height: 30vh; 
     box-shadow: 5px 5px 10px 2px rgba(8, 8, 8, 0.8);
+    height: auto; 
+    width: 100%; 
 }
 nav{
-    display:grid;
+    display: block; 
     font-size: 25px;
     color: white;
     background-color: black;
     text-align: center;
-
 }
 nav a{
     color: white; 
     text-decoration: none;
+    display: block; 
+    margin: 10px 0; 
 }
 nav a:hover{
     background-color: brown;
@@ -43,16 +47,17 @@ nav a:hover{
     color: black;
     text-align: center;
     border-bottom: 1px solid darkgrey;
-    margin-left: 7% ;
-    margin-right:7% ;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .card {
     text-align: center;
-    width: 86%;
-    margin-left: 7% ;
-    margin-right:7% ;
+    width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
     outline: 2px lightgray solid;
     border-radius: 3px;
+    
 }
 .card ul{
     list-style: none;
@@ -79,3 +84,4 @@ nav a:hover{
 #lastModified{
     color: yellow;
 }
+
