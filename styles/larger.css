@@ -4,7 +4,12 @@
         font-family: 'Share', cursive;
         width: 100%;
     }
-
+    .midbitty{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+    }
+    }
     .top-bit {
         display: flex; 
         background-color:navy;
