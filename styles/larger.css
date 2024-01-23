@@ -9,7 +9,7 @@
         margin-top: 20px;
         display: flex;
     }
-    }
+    
     .top-bit {
         display: flex; 
         background-color:navy;
@@ -71,10 +71,6 @@
         background-color: navy;
     }
 
-    .middle-bit {
-        text-align: center;
-    }
-
     .footer{
         margin: 0 auto;
         justify-content: center;
@@ -87,4 +83,4 @@
     #lastModified{
         color: yellow;
     }
-}    
+}   
