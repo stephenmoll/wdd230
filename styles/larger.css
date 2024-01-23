@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
 @media screen and (min-width: 601px){
-    body {
+    /* body {
         font-family: 'Share', cursive;
         width: 100%;
     }
@@ -80,6 +80,101 @@
         color: white;
     }
     #lastModified{
+        color: yellow;
+    } */
+    body {
+        font-family: 'Share', cursive;
+        width: 100%;
+    }
+    
+    .top-bit {
+        display: flex;
+        background-color: navy;
+        height: 30%;
+    }
+    
+    .top-bit p {
+        margin: 0 auto;
+        font-size: 6vw;
+        color: white;
+        margin-top: 10vh;
+    }
+    
+    .profile-img {
+        margin: 0 auto;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        height: 30vh;
+        box-shadow: 5px 5px 10px 2px rgba(8, 8, 8, 0.8);
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        text-align: center;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        background-color: brown;
+    }
+    
+    .frontend {
+        color: black;
+        text-align: center;
+        border-bottom: 1px solid darkgrey;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    
+    .main-container {
+        display: flex;
+        justify-content: space-between; /* Distribute space between two sections */
+        margin: 2% 7%; /* Adjust margins as needed */
+    }
+    
+    .card {
+        text-align: center;
+        width: 65%; /* 2/3 of the available width */
+        outline: 2px lightgray solid;
+        border-radius: 3px;
+    }
+    
+    .information-card {
+        text-align: center;
+        width: 30%; /* 1/3 of the available width */
+        outline: 2px lightgray solid;
+        border-radius: 3px;
+    }
+    
+    .card ul {
+        list-style: none;
+    }
+    
+    .card h3, .information-card h3 {
+        color: white;
+        background-color: navy;
+    }
+    
+    .footer {
+        margin: 0 auto;
+        justify-content: center;
+        background-color: navy;
+        text-align: center;
+    }
+    
+    .footer-paragragh-1 {
+        color: white;
+    }
+    
+    #lastModified {
         color: yellow;
     }
 }
