@@ -83,4 +83,7 @@
     #lastModified{
         color: yellow;
     }
+    .mobile-menu-icon {
+        display: none;
+    }
 }   
