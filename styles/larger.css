@@ -86,4 +86,7 @@
     .mobile-menu-icon {
         display: none;
     }
+    .close-menu {
+        display: none;
+    }
 }   
