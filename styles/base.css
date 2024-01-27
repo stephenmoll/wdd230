@@ -112,8 +112,10 @@ nav a:hover{
         display: none;
     }
 
-    nav.open #googleMap {
-        display: block;
+   nav:not(.open) #googleMap {
+        display: block; /* Show the map only when the menu is closed */
+        width: 100%; /* Ensure full width */
+        height: 450px; /* Adjust the height as needed */
     }
 
 }
