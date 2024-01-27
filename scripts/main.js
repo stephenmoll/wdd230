@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileMenuIcon.addEventListener('click', function () {
         nav.classList.toggle('open');
         closeMenuButton.style.display = 'block';
-        googleMap.style.display = 'block'; 
+        googleMap.style.display = 'none'; 
     });
 
     closeMenuButton.addEventListener('click', function () {
         nav.classList.remove('open');
         closeMenuButton.style.display = 'none';
-        googleMap.style.display = 'none'; 
+        googleMap.style.display = 'block'; 
     });
 });
