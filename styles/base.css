@@ -106,5 +106,14 @@ nav a:hover{
         font-size: 45px;
         cursor: pointer;
         display: none;
+
     }
+    #googleMap {
+        display: none;
+    }
+
+    nav.open #googleMap {
+        display: block;
+    }
+
 }
