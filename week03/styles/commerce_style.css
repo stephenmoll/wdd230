@@ -26,7 +26,7 @@ a, a:visited {
     color: #fff;
     padding: 0.5rem;
     
-    background-color: var(white);
+    /* background-color: var(white); */
     width: 98%;
     text-align: center; 
     margin: 2px auto;     
