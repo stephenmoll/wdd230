@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&display=swap');
+
+.Vollkorn {font-family: 'Vollkorn SC', serif; font-size: 1.3rem;}
+.Montserrat {font-family: 'Montserrat', sans-serif;}
+.fontPTsans {font-family: 'PT Sans', sans-serif;}
+
+:root {
+    --primary-color: rgb(61, 60, 60);
+    --secondary-color: black;
+    --accent1-color: rgb(131, 129, 129);
+    --accent2-color: bisque;
+}
+#actual {
+    background-color:black
+}
+#aud {
+    background-color: rgb(61, 60, 60);
+}
+#sche {
+    background-color: rgb(131, 129, 129);
+}
+a, a:visited {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
+    
+    background-color: var(white);
+    width: 98%;
+    text-align: center; 
+    margin: 2px auto;     
+}
+* {
+    margin: 0 auto;
+    box-sizing: border-box;  
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:#e2e1e1fa;
+}
+ header, nav, main, footer,#hero {
+    max-width: 70rem; 
+}
+
+header {
+    display: flex;
+    padding: 1rem;    
+    align-items: center;
+    font-family: 'Vollkorn SC', serif;
+    color:black;
+    background-color:lightgray;
+}
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    min-width: 13px;
+
+}
+.Montserrat{
+    text-align: center;
+}
+.fontPTsans{
+    text-align: center;
+}
+header img {
+    width: 4rem;
+    margin: 0 1rem;
+    border-radius: 50%;    
+}
+nav {
+    
+    background-color:white;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    width: 100%;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+main {    
+    padding:1rem;
+    background: whitesmoke;
+    text-align: center;
+}
+article {
+    margin: 0 auto 1em auto;
+    padding: 1em 0.5em;
+    border: rgb(61, 60, 60) solid 1px;
+   
+}
+article h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+    
+}
+article p{
+    text-align: justify;
+}
+.article{
+    background-color: bisque;
+}
+.exception {
+    background-color: white;
+}
+
+
+table {
+    width: 100%;
+    margin: 1rem auto;
+    border: solid white 5px;
+    font-size: 0.8rem;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.accent1 {
+    background-color: var(--accent1-color);
+}
+.accent2 {
+    background-color: var(--accent2-color);
+}
+.image {
+    width: 80vw;
+}
+footer img {
+    width: 6rem;
+    margin: 0 1rem;
+    border-radius: 50%;    
+}
+footer {
+    display: flex;
+    padding: 1rem;
+    align-content: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+/* header {
+    display: flex;
+    padding: 1rem;    
+    align-items: center;
+    font-family: 'Vollkorn SC', serif;
+    color:black;
+    background-color:lightgray; */
+
+/* #hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+} */
+
+/* the following code I borrowed from classmates and do not take credit for the responsiveness,
+the code has been added to aid my own comprehension. 
+*/
+
+@media only screen and (min-width:37.5rem) {        
+    header h1 {
+        font-size: 2em;
+    }
+    header img {
+        width: 7rem;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    a, a:visited {
+        padding: 1rem;
+        
+    }
+
+    main {
+        padding:2rem 3rem;
+    }
+    article {
+        padding: 1em 2em;
+    }
+    .image {
+        max-width: 30rem;
+        margin-bottom: 1rem;
+    }
+    #persons {
+        display: flex;
+    }
+}
