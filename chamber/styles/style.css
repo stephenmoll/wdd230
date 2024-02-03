@@ -39,16 +39,26 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color:#e2e1e1fa;
 }
- header, nav, main, footer,#hero {
+ header, nav, main, footer,#hero-img {
     max-width: 70rem; 
     
 }
-/* #hero {
-    width: 100%; 
-    max-width: 70rem; 
-} */
+#hero {
+    margin: 0;
+    padding: 0;
+}
+ #hero-img {
+    margin: 0 auto;
+    margin-left: -8.5%;
+    padding: 0;  
+    width: 100vw;
+    width: 100%;
+    margin: 0;
+} 
 
 header {
+    margin-bottom: 0;
+
     display: flex;
     padding: 1rem;    
     align-items: center;
@@ -74,7 +84,8 @@ header img {
     border-radius: 50%;    
 }
 nav {
-    
+    margin-top: 0;
+
     background-color:white;
     display: flex;
     flex-flow: column;
@@ -82,6 +93,9 @@ nav {
     width: 100%;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
+}
+nav a, nav a:visited {
+    margin: 0;
 }
 /* orgional1 */
 /* main {    
@@ -97,8 +111,9 @@ main {
     flex-direction: column;
 }
 .flex-container {
+    margin: 0 auto;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 /* origional1 */
@@ -108,12 +123,15 @@ main {
     border: rgb(61, 60, 60) solid 1px;
    
 } */
-
+.flex-container .article{
+    width: 5vw;
+}
 .article {
+    width: 100%;
     margin: 0 1em 1em 0;
     padding: 1em;
     border: rgb(61, 60, 60) solid 1px;
-    flex: 1;
+    /* flex: 1; */
 }
 article h2 {
     margin-bottom: 0.5rem;
@@ -129,15 +147,15 @@ article p{
 .exception {
     background-color: white;
 }
-.events,
-.weather {
+/* .events, */
+/* .weather { */
      /*flex-basis: calc(50% - 0.5em); 50% width with some spacing between them 1*/
     /* width: 100%; Take up 100% width of the flex container */
      /*margin-bottom: 1em; Add some spacing between them */
-    flex: 1; /* Equal width distribution within the flex container */
-    margin-bottom: 1em; /* Add some spacing between them */
+   /* flex: 1;  Equal width distribution within the flex container */
+     /*margin-bottom: 1em; Add some spacing between them */
 
-}
+
 
 table {
     width: 100%;
