@@ -10,6 +10,8 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/Leonardo_Diffusion_logo_for_the_Cape_Peninsula_Chamber_of_Comm_3.jpg" type="image/favicon">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -18,19 +20,17 @@
         <h1> CAPE PENINSULA CHAMBER OF COMMERCE </h1> 
         
     </header>
-
     <nav>
-        <a href="index.html" id="actual">HOME</a>
-        <a href="target-audience.html" id="aud" >DISCOVER</a>
-        <a href="design.html"id="sche">DIRECTORY</a>
-        <a href="index.html" id="actual">JOIN</a>
+        <a href="index.html" id="home">HOME</a>
+        <a href="discover.html" id="disc" >DISCOVER</a>
+        <a href="directory.html"id="direc">DIRECTORY</a>
+        <a href="join.html" id="join">JOIN</a>
         
     </nav>
-
-
     <main>
         <div id="hero">   
             <img id="hero-img" src="images/HD_wallpaper.jpg" alt="Table Mountain">
+            <a id="join-button"a href="join.html">JOIN</a>
         </div>
         <article class="article">
             <h2>About Us</h2>
@@ -69,7 +69,7 @@
             <article class="article">
                 <div class="weather">
                     <h2>Weather</h2>
-                    
+                    <div id="weather-info"></div>
                 </div>
             </article>
         </div>
@@ -91,5 +91,6 @@
         </div>
     </footer>
     <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

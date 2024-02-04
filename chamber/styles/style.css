@@ -12,14 +12,17 @@
     --accent1-color: rgb(131, 129, 129);
     --accent2-color: bisque;
 }
-#actual {
+#home {
     background-color:black
 }
-#aud {
+#disc {
     background-color: rgb(61, 60, 60);
 }
-#sche {
+#direc {
     background-color: rgb(131, 129, 129);
+}
+#join {
+    background-color:black
 }
 a, a:visited {
     text-decoration: none;
@@ -44,6 +47,7 @@ body {
     
 }
 #hero {
+    position: relative;
     margin: 0;
     padding: 0;
 }
@@ -55,6 +59,27 @@ body {
     width: 100%;
     margin: 0;
 } 
+#join-button {
+    position: absolute;
+    top: 5rem; /* Adjust the top distance as needed */
+    left: 7rem; /* Adjust the left distance as needed */
+    padding: 10px 20px;
+    background-color: #fff;
+    color: var(--primary-color);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    min-height: 40px;
+    height: 4rem;
+    width: 15rem;
+    border-radius: 10px;
+    font-family: 'Vollkorn SC', serif;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-size: 2rem;
+    text-justify: center;
+    color: #fff;
+    background-color:navy;
+}
 
 header {
     margin-bottom: 0;
@@ -112,9 +137,13 @@ main {
 }
 .flex-container {
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
     flex-wrap: wrap;
+    column-gap: 1rem;
+
 }
 /* origional1 */
 /* article {
@@ -124,12 +153,19 @@ main {
    
 } */
 .flex-container .article{
-    width: 5vw;
+    width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem ;
+   
 }
 .article {
+    text-align: center;
     width: 100%;
-    margin: 0 1em 1em 0;
+    /* margin: 0 1em 1em 0; */
+    margin: 0 auto;
     padding: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border: rgb(61, 60, 60) solid 1px;
     /* flex: 1; */
 }
@@ -139,7 +175,7 @@ article h2 {
     
 }
 article p{
-    text-align: justify;
+    text-align: center;
 }
 .article{
     background-color: bisque;
@@ -191,6 +227,7 @@ footer {
     color: white;
     padding: 3em;
 }
+
 /* header {
     display: flex;
     padding: 1rem;    
@@ -208,6 +245,12 @@ footer {
 /* the following code I borrowed from classmates and do not take credit for the responsiveness,
 the code has been added to aid my own comprehension. 
 */
+
+@media only screen and (max-width:37.5rem) {
+    #join-button{
+        display: none;
+    }
+} 
 
 @media only screen and (min-width:37.5rem) {        
     header h1 {
@@ -240,4 +283,5 @@ the code has been added to aid my own comprehension.
     #persons {
         display: flex;
     }
+
 }
