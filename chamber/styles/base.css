@@ -28,8 +28,6 @@ a, a:visited {
     text-decoration: none;
     color: #fff;
     padding: 0.5rem;
-    
-    background-color: var(white);
     width: 98%;
     text-align: center; 
     margin: 2px auto;     
@@ -60,25 +58,23 @@ body {
     margin: 0;
 } 
 #join-button {
-    position: absolute;
-    top: 5rem; /* Adjust the top distance as needed */
-    left: 7rem; /* Adjust the left distance as needed */
-    padding: 10px 20px;
-    background-color: #fff;
-    color: var(--primary-color);
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    min-height: 40px;
-    height: 4rem;
-    width: 15rem;
-    border-radius: 10px;
-    font-family: 'Vollkorn SC', serif;
-    /* font-family: 'PT Sans', sans-serif; */
-    font-size: 2rem;
-    text-justify: center;
-    color: #fff;
-    background-color:navy;
+    position : absolute;
+    top : 5rem;
+    left : 7rem;
+    padding : 10px 20px;
+    background-color : #fff;
+    color : var(--primary-color);
+    border : none;
+    font-size : 1rem;
+    cursor : pointer;
+    min-height : 40px;
+    height : 4rem;
+    width : 15rem;
+    border-radius : 10px;
+    font-family : 'Vollkorn SC', serif;
+    font-size : 2rem;
+    color : #fff;
+    background-color : navy;
 }
 
 header {
@@ -191,8 +187,6 @@ article p{
    /* flex: 1;  Equal width distribution within the flex container */
      /*margin-bottom: 1em; Add some spacing between them */
 
-
-
 table {
     width: 100%;
     margin: 1rem auto;
@@ -251,37 +245,3 @@ the code has been added to aid my own comprehension.
         display: none;
     }
 } 
-
-@media only screen and (min-width:37.5rem) {        
-    header h1 {
-        font-size: 2em;
-    }
-    header img {
-        width: 7rem;
-    }
-
-    nav {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-    }
-    a, a:visited {
-        padding: 1rem;
-        
-    }
-
-    main {
-        padding:2rem 3rem;
-    }
-    article {
-        padding: 1em 2em;
-    }
-    .image {
-        max-width: 30rem;
-        margin-bottom: 1rem;
-    }
-    #persons {
-        display: flex;
-    }
-
-}
