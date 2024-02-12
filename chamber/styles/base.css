@@ -13,16 +13,19 @@
     --accent2-color: bisque;
 }
 #home {
-    background-color:black
+    /* background-color:black  */
+    background-color: #000000
 }
 #disc {
     background-color: rgb(61, 60, 60);
+    background-color: #003e3e
+    
 }
 #direc {
-    background-color: rgb(131, 129, 129);
+    background-color:  	#007c7c
 }
 #join {
-    background-color:black
+    background-color: #003e3e
 }
 a, a:visited {
     text-decoration: none;
@@ -85,8 +88,10 @@ header {
     align-items: center;
     font-family: 'Vollkorn SC', serif;
     color:black;
-    background-color:lightgray;
+    /* background-color: #00baba */
+    background-color: skyblue
 }
+
 header h1 {
     text-align: center;
     font-size: 2em;
@@ -109,7 +114,7 @@ nav {
 
     background-color:white;
     display: flex;
-    flex-flow: column;
+    /* flex-flow: column; */
     color: white;
     width: 100%;
     padding: 0;
@@ -174,7 +179,8 @@ article p{
     text-align: center;
 }
 .article{
-    background-color: bisque;
+    /* background-color: bisque; */
+    background-color:powderblue;
 }
 .exception {
     background-color: white;
@@ -217,11 +223,14 @@ footer img {
 footer {
     display: flex;
     align-content: center;
-    background-color: var(--primary-color);
+    background-color: #007c7c;
     color: white;
     padding: 3em;
 }
 
+.mobile-menu-icon{
+    display: none;
+}
 /* header {
     display: flex;
     padding: 1rem;    
@@ -245,3 +254,54 @@ the code has been added to aid my own comprehension.
         display: none;
     }
 } 
+@media screen and (max-width: 600px) {
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        
+        /* position: absolute; 
+        top: 0px;
+        right: 10px;
+         font-size: 45px;
+        cursor: pointer;
+         */
+    }
+
+
+    /* nav{
+        display: block; 
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        text-align: center;
+    } */
+
+    nav.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav a{
+        height: 40px;
+        width: 100%;
+    }
+    /* .close-menu {
+
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 45px;
+        cursor: pointer;
+        display: none;
+
+    } */
+}
