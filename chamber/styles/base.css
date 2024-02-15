@@ -13,7 +13,6 @@
     --accent2-color: bisque;
 }
 #home {
-    /* background-color:black  */
     background-color: #000000
 }
 #disc {
@@ -88,7 +87,6 @@ header {
     align-items: center;
     font-family: 'Vollkorn SC', serif;
     color:black;
-    /* background-color: #00baba */
     background-color: skyblue
 }
 
@@ -114,7 +112,6 @@ nav {
 
     background-color:white;
     display: flex;
-    /* flex-flow: column; */
     color: white;
     width: 100%;
     padding: 0;
@@ -123,12 +120,7 @@ nav {
 nav a, nav a:visited {
     margin: 0;
 }
-/* orgional1 */
-/* main {    
-    padding:1rem;
-    background: whitesmoke;
-    text-align: center;
-} */
+
 main {
     padding: 1rem;
     background: whitesmoke;
@@ -146,13 +138,7 @@ main {
     column-gap: 1rem;
 
 }
-/* origional1 */
-/* article {
-    margin: 0 auto 1em auto;
-    padding: 1em 0.5em;
-    border: rgb(61, 60, 60) solid 1px;
-   
-} */
+
 .flex-container .article{
     width: 100%;
     margin-left: 0.5rem;
@@ -162,13 +148,12 @@ main {
 .article {
     text-align: center;
     width: 100%;
-    /* margin: 0 1em 1em 0; */
+
     margin: 0 auto;
     padding: 1em;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: rgb(61, 60, 60) solid 1px;
-    /* flex: 1; */
 }
 article h2 {
     margin-bottom: 0.5rem;
@@ -182,16 +167,6 @@ article p{
     /* background-color: bisque; */
     background-color:powderblue;
 }
-.exception {
-    background-color: white;
-}
-/* .events, */
-/* .weather { */
-     /*flex-basis: calc(50% - 0.5em); 50% width with some spacing between them 1*/
-    /* width: 100%; Take up 100% width of the flex container */
-     /*margin-bottom: 1em; Add some spacing between them */
-   /* flex: 1;  Equal width distribution within the flex container */
-     /*margin-bottom: 1em; Add some spacing between them */
 
 table {
     width: 100%;
@@ -231,23 +206,112 @@ footer {
 .mobile-menu-icon{
     display: none;
 }
-/* header {
-    display: flex;
-    padding: 1rem;    
-    align-items: center;
-    font-family: 'Vollkorn SC', serif;
-    color:black;
-    background-color:lightgray; */
 
-/* #hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px; 
-} */
+/* Dark/light mode switch */
 
-/* the following code I borrowed from classmates and do not take credit for the responsiveness,
-the code has been added to aid my own comprehension. 
-*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    right: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: #ccc; */
+    background-color:#2196F3;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#000080;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px navy;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    width: 60px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+/* Dark-mode css */
+
+.dark-mode {
+    background-color: #000;
+    
+}
+.dark-mode main{
+    background-color:#333 ;
+}
+.dark-mode .article{
+    background-color:#003e3e;
+    color: skyblue;
+}
+
+
+.dark-mode nav a {
+    color: skyblue; /* Change navigation link color */
+    
+}
+
+.dark-mode header {
+    background-color: rgb(35, 35, 35); /* Change header background color */
+    color: skyblue;
+}
+
+.dark-mode .image {
+    filter: brightness(50%); /* Adjust image brightness */
+}
+.dark-mode #hero{
+    filter: brightness(50%); /* Adjust image brightness */
+}
+
+.dark-mode footer{
+    background-color: #003e3e;
+    color: silver;
+}
+
 
 @media only screen and (max-width:37.5rem) {
     #join-button{
@@ -268,22 +332,8 @@ the code has been added to aid my own comprehension.
     nav {
         display: none;
         
-        /* position: absolute; 
-        top: 0px;
-        right: 10px;
-         font-size: 45px;
-        cursor: pointer;
-         */
+
     }
-
-
-    /* nav{
-        display: block; 
-        font-size: 25px;
-        color: white;
-        background-color: black;
-        text-align: center;
-    } */
 
     nav.open {
         display: flex;
@@ -294,14 +344,4 @@ the code has been added to aid my own comprehension.
         height: 40px;
         width: 100%;
     }
-    /* .close-menu {
-
-        position: absolute;
-        top: 0px;
-        right: 10px;
-        font-size: 45px;
-        cursor: pointer;
-        display: none;
-
-    } */
 }
