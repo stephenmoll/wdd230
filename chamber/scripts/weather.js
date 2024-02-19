@@ -1,23 +1,24 @@
 // weather.js
-
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
     // Replace 'YOUR_API_KEY' with the API key you obtained from OpenWeatherMap
-    const apiKey = '612827c04cfe4379542a37dc86b7db42' ;
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Cape%20Town,ZA&appid=612827c04cfe4379542a37dc86b7db42&units=metric`;
+    const apiKey = '612827c04cfe4379542a37dc86b7db42';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Cape%20Town,ZA&appid=${apiKey}&units=metric`;
 
-    // Make an AJAX request to the OpenWeatherMap API
-    $.ajax({
-        url: apiUrl,
-        type: 'GET',
-        dataType: 'json',
-        success: function (data) {
+    // Make a fetch request to the OpenWeatherMap API
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
             // Handle the response data
             displayWeather(data);
-        },
-        error: function (error) {
-            console.log('Error fetching weather data:', error);
-        }
-    });
+        })
+        .catch(error => {
+            console.error('Error fetching weather data:', error);
+        });
 
     // Function to display weather information
     function displayWeather(data) {
@@ -27,11 +28,11 @@ $(document).ready(function () {
         const temperature = data.main.temp;
         const description = data.weather[0].description;
 
-        // Create HTML content for weather information
+
         const htmlContent = `<p>Temperature: ${temperature} &#8451;</p>
                              <p>Description: ${description}</p>`;
 
-        // Set the HTML content inside the weather-info div
+     
         weatherInfo.innerHTML = htmlContent;
     }
 });
