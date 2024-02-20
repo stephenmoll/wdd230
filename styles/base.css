@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+
 body {
     font-family: 'Share', cursive;
     font-size: 14px;
@@ -24,7 +25,7 @@ body {
     margin: 0 auto;
     margin-top: 1vh;
     margin-bottom: 1vh;
-    box-shadow: 5px 5px 10px 2px rgba(8, 8, 8, 0.8);
+    /* box-shadow: 5px 5px 10px 2px rgba(8, 8, 8, 0.8); */
     height: auto; 
     width: 100%; 
 }
@@ -51,6 +52,59 @@ nav a:hover{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+
+
+
+main {
+	max-width: 670px;
+	margin: 0 auto;
+}
+
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    
+    /* margin: 0 auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh; */
+    
+    /* height: auto; 
+    width: 100%;  */
+    
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+}
+
+
+
+
 .card {
     text-align: center;
     width: 100%; 
