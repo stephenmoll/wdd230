@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://wallpapercave.com/dwp2x/wp1842994.jpg">
     <meta property="og:url" content="https://stephenmoll.github.io/wdd230">
     
-    <link rel="icon" href="images/favicon.png" type="image/favicon">
+    <link rel="icon" href="images/favicon-1.webp" type="image/favicon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css" media="screen and (max-width: 600px)">
     <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 601px)">
@@ -36,18 +36,16 @@
     </nav>
     <main>  
         <div class="hero">
+
             <picture>
-                <!-- <img src="images/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg" alt="johannesburg-south-africa-temple"> -->
-                <img 
-                    srcset="images/johannesburg-south-africa-temple-lds-450241-wallpaper.webp 600w,
-                            images/johannesburg-south-africa-temple-lds-83166-wallpaper.webp 601w"
-                    sizes="(max-width: 600px) 600px, 601px"
-                    src="images/johannesburg-south-africa-temple-lds-83166-wallpaper.webp" 
-                    alt="Johannesburg South Africa Temple"
-                >
+                    <source srcset="images/johannesburg-south-africa-temple-lds-450241-wallpaper.webp" media="(max-width: 600px)">
+                    <source srcset="images/johannesburg-south-africa-temple-lds-83166-wallpaper.webp" media="(max-width: 960px)">
+                    <img src="images/johannesburg-south-africa-temple-lds-83166-wallpaper.webp" alt="Johannesburg South Africa Temple" width="1500" height="750">    
+            </picture>
             <div class="herolabel">
                 <p>Johannesburg Temple</p>
             </div>
+            
         </div>
         <h2 class="frontend">WDD 230: Web Frontend Development</h2>  
         <div class="midbitty">
