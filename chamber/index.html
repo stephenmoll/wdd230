@@ -14,9 +14,7 @@
     <meta property="og:image" content="https://wallpapercave.com/dwp2x/wp1842994.jpg">
     <meta property="og:url" content="https://stephenmoll.github.io/wdd230/chamber/index.html">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  -->
     <link rel="stylesheet" href="styles/base.css">
-    <!-- <link rel="stylesheet" href="styles/base.css" media="screen and (max-width: 600px)">-->
     <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width:37.5rem)"> 
     <link rel="icon" href="images/Leonardo_Diffusion_logo_for_the_Cape_Peninsula_Chamber_of_Comm_3.jpg" type="image/favicon">
 
@@ -34,17 +32,22 @@
         <div class="mobile-menu-icon" id="mobileMenuIcon">&#9776;</div>
     </header>
     <nav class="nav_bar">
-        <a href="index.html" id="home">HOME</a>
-        <a href="discover.html" id="disc" >DISCOVER</a>
-        <a href="directory.html" id="direc">DIRECTORY</a>
-        <a href="join.html" id="join">JOIN</a>
+        <a href="index.html" class="home">HOME</a>
+        <a href="discover.html" class="disc" >DISCOVER</a>
+        <a href="directory.html" class="direc">DIRECTORY</a>
+        <a href="join.html" class="join">JOIN</a>
         
     </nav>
     <main>
-        <div id="hero">   
-            <img id= "hero-img" src="images/HD_wallpaper.jpg" alt="Table Mountain">
-            <a id="join-button" href="join.html">Join</a>
-
+        <div class="hero">   
+            <!-- <img class= "hero-img" src="images/HD_wallpaper.jpg" alt="Table Mountain">
+            <a class="join-button" href="join.html">Join</a> -->
+            <img class= "hero-img" src="images/wdd230-org-small.jpg"
+                srcset="images/wdd230-org-small.jpg 500w,
+                    images/wdd230-org-medium.jpg 1000w, 
+                    images/wdd230-org-large.jpg 1500"
+                alt="Table Mountain">
+            
         </div>
         <article class="article">
             <h2>About Us</h2>
@@ -62,17 +65,6 @@
         
         <img class="image" src="images/Leonardo_Select_logo_for_the_Cape_Peninsula_Chamber_of_Commerc_3.jpg" alt="Image art - Cape Peninsula" >
         
-        <!-- <article class="article">
-            <div class="events">
-                <h2>Events</h2>
-            </div>
-        </article>
-
-        <article class="article">
-            <div class="weather">
-                <h2>Weather</h2>
-            </div>
-        </article> -->
         <div class="flex-container">
             <article class="article">
                 <div class="events">

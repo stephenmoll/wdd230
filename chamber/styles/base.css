@@ -12,18 +12,18 @@
     --accent1-color: rgb(131, 129, 129);
     --accent2-color: bisque;
 }
-#home {
+.home {
     background-color: #000000
 }
-#disc {
+.disc {
     background-color: rgb(61, 60, 60);
     background-color: #003e3e;
     
 }
-#direc {
+.direc {
     background-color:  	#007c7c;
 }
-#join {
+.join {
     background-color: #003e3e;
 }
 a, a:visited {
@@ -46,20 +46,20 @@ body {
     max-width: 70rem; 
     
 }
-#hero {
+.hero {
     position: relative;
     margin: 0;
     padding: 0;
 }
- #hero-img {
+.hero-img {
     margin: 0 auto;
     margin-left: -8.5%;
     padding: 0;  
-    width: 100vw;
+    /* width: 100vw; */
     width: 100%;
     margin: 0;
 } 
-#join-button {
+.join-button {
     position : absolute;
     top : 5rem;
     left : 7rem;
